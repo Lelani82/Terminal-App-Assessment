@@ -1,4 +1,5 @@
 require_relative 'items'
+require 'classic-jekyll-theme'
 
 class List
     
@@ -12,14 +13,14 @@ class List
         return self
     end
 
-    def preview                             # order app
-        puts "======================"
-        puts "Your shopping list is:"
-        puts "======================"
+    def preview
+        puts "=============================="
+        puts "Your current shopping list is:"
+        puts "=============================="
         @list.each do |item, quantity|
-            puts "#{quantity} - #{item.item_name}"    #item.name.capitalize
+            puts "#{quantity} - #{item.item_name}"              # This is where we were going wrong item.item_name
         end
-        puts "======================"
+        puts "=============================="
     end
 
 end
@@ -32,7 +33,7 @@ loop do
     puts "Press (a)dd to add an item, or \nPress (p)review to view your current list, or \nPress (q)uit to exit once finished"
     answer = gets.strip.downcase
     case answer
-    when "a"                                            # When input is (a)         
+    when "a"                                            # When input is (a)
         puts "What item would you like to add to your shopping list?"
         item_name = gets.strip.downcase
         puts "What category is this item in?"
