@@ -1,5 +1,5 @@
 require_relative 'items'
-require 'classic-jekyll-theme'
+require 'tty-prompt'
 
 class List
     
@@ -13,12 +13,22 @@ class List
         return self
     end
 
-    def preview
+    def preview                                                 # This creates current shopping items list
         puts "=============================="
         puts "Your current shopping list is:"
         puts "=============================="
         @list.each do |item, quantity|
-            puts "#{quantity} - #{item.item_name}"              # This is where we were going wrong item.item_name
+            puts "#{quantity} - #{item.item_name}"              
+        end
+        puts "=============================="
+    end
+
+    def final                                                   # This creates the final shopping list in categories
+        puts "=============================="
+        puts "Your current shopping list is:"
+        puts "=============================="
+        @list.each do |item, quantity|
+            puts "#{quantity} - #{item.item_name}"              
         end
         puts "=============================="
     end
@@ -36,8 +46,9 @@ loop do
     when "a"                                            # When input is (a)
         puts "What item would you like to add to your shopping list?"
         item_name = gets.strip.downcase
-        puts "What category is this item in?"
-        category = gets.strip.downcase
+        prompt = TTY::Prompt.new
+        category = %w(fruit/veggies chilled/frozen meat/poultry bakery other)
+        prompt.multi_select('Choose your favourite drink?', category, help: '(Use arrow keys and Enter to finish)')
         item = Item.new(item_name, category)
         puts "How many #{item_name}'s would you like?"
         quantity = gets.strip.to_i
