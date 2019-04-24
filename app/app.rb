@@ -7,6 +7,7 @@ ordered_list = List.new
 
 # Main Loop - Asks customer for options
 loop do
+    puts "Welcome to your Shopping List App:"
     puts "Press (a)dd to add an item, or \nPress (p)review to view your current list, or \nPress (q)uit to exit once finished"
     answer = gets.strip.downcase
     

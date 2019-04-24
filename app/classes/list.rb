@@ -38,8 +38,6 @@ class List
         puts
     end
 
-   
-
     def print_final_list(categories)
         # This creates the final shopping list in categories
         puts "Your Final Shopping List:"
@@ -49,6 +47,4 @@ class List
         end
     end
 
-
 end
-

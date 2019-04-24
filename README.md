@@ -1,54 +1,143 @@
 # Terminal-App-Assessment
 
+## A Link to our GitHub Repository
+Here's the link to our GitHub repository:
 
-● A link to your GitHub repository (public repo)
 https://github.com/Lelani82/Terminal-App-Assessment
 
+___________________________________________________________________________________________________________________________
 
-● Description of the app:
-Our shopping app can be used to add your shopping items, categories and quantities.
+## A Description of our App
 
-○ Purpose
-To organise yourself with an essential everyday item
 
-○ Functionality
-A unique list for things to buy at the shops
+### The Purpose of our App
 
-○ Instructions for use
-Gem instructions (bundle install/ run ruby filename)
+The purpose of our app is to add your shopping items and their quantities, into a categorised list. This makes it easier for you to do your shopping online or instore.
 
-Following a prompt, add an item, category and quantity. 
-Repeat if needed. 
-A list will appear when done.
 
-○ Screenshots
+### The Functionality of our App
 
-○ Future enhancements
-Sort by category
-Delete items
-Save to YAML file
-Update/ Edit list
+In our app you can do the following:
 
-○ Accessibility concerns
-We thought about how blind people could have an issue if wanting to use our app. Possible solutions are install a gem that converts text to speech or using a screen reader.
-Not istalling any gems that could be hard for people to read (considered colour selection) or have epilepsy (considered flashing text)
+● Add items, 
 
-○ Potential legal, moral, ethical, cultural and safety issues
-We have discussed and addressed any possible issues. We have not come accross any. 
+● Select a category (from a drop down menu),
 
-○ Possible social, political, cultural, racial, gender and international issues
+● Add quantities, 
+
+● Preview your current shopping list,
+
+● View your final shopping list (which is sorted out by category).
+
+### Instructions for Use
+
+Step 1: Install the Gemfile Bundle
+
+● In your Terminal type: bundle install
+
+Step 2: Open the App in your Terminal
+
+● In your Terminal type: ruby app.rb
+
+Step 3: Follow the App's prompts
+
+● Press (a) to add an item
+
+● Press (p) to preview your current list
+
+● Press (q) to quit and view your final shopping list
+
+● Note: if you press any other key you will get an invalid option prompt and be redirected to enter one of the above options
+
+Step 4: Seleting option 'a' - Adding an item to your shopping list
+
+● The app will ask you what item you would like to add. Type in your item and press Enter.
+
+● The app will ask you to choose your category. Use the arrow keys and press Enter). There are 5 categories to choose from:
+
+○ Fruit and Veggies
+
+○ Chilled and Frozen
+
+○ Meat and Poultry
+
+○ Bakery
+
+○ Other
+
+● The app will ask you how many you would like to add. Type in your quantity and press Enter.
+
+● The app will take you back to Step 3 where you can continue to add more items, preview your current list or quit and view your final list.
+
+Step 5: Seleting option 'p' - Previewing your current items in your shopping list
+
+● The app will show you your current items in your shopping list. 
+
+● The app will take you back to Step 3 where you can add more items, preview your current list again or quit and view your final list.
+
+Step 6: Seleting option 'q' - Quiting and viewing your final shopping list (sorted by categories)
+
+● The app will show you your final shopping list. It will display your items in their categories.
+
+● This final step also exits you from the app.
+
+### Screenshots of our App
+
+● Please view the screenshots folder
+
+### Future Enhancements of our App
+
+Here is a list of possible future enhancements we have thought of:
+
+● When printing the final list, only print the categories which include items (instead of printing a full list with empty categories)
+
+● The option to delete an item fro your list
+
+● The option to save your list to a YAML file 
+
+● The option to update or edit your list
+
+### Accessibility Concerns
+
+We thought about how visually impaired people could have an issue if wanting to use our app. Possible solutions could include:
+
+● Install a gem that converts text to speech or 
+● Using a screen reader
+
+We also thought about the consequences of installing a gem that could make it hard for people to read (we considered our colour selection) or for people that have epilepsy (we decided to avoid using flashing text)
+
+### Potential legal, moral, ethical, cultural and safety issues
+We have discussed and addressed any possible issues. We have not come accross any, apart from possible licensing issues with using an external Gem.
+
+### Possible social, political, cultural, racial, gender and international issues
 We have discussed and addressed any possible issues. We have not come accross any.
 
-● Details of design & planning process:
+___________________________________________________________________________________________________________________________
 
-○ Evidence of ​ app ​ idea brainstorming sessions
+## Details of our App Design & our Planning Process:
 
-○ User stories
+### Evidence of ​our app idea and brainstorming sessions
 
-○ Project plan & timeline
+● Please view the screenshots folder 
 
-○ Description of overall app design (classes, files, basic flow)
+### User stories of our App Design
 
-○ Design considerations and choices
+● Please view the screenshots folder
 
-○ Screenshots of Trello board(s)
+### Our Project Plan & Timeline
+
+● Please view the screenshots folder
+
+### Description of Overall App Design (classes, files, basic flow)
+
+●  We have 3 files which include 1 main and 2 class files. We chose to have 2 seperate class files to keep the main app uncluttered and easy to follow and edit. We chose to have all the categories listed in the main app so that it would be easy to update them if you chose to use it for a different type of store (like Bunnings)
+●  The whole app is run from the main file and contains a main loop which prompts the user for their input (view screenshots folder)
+●  For basic flow diagram please view the screenshots folder
+
+### Design considerations and choices
+
+● We considered a couple of different app ideas but chose the shopping list because it was something we could both potentially use and due to time constraints with other larger, more complex apps (view screenshots folder)
+
+### Screenshots of Trello board(s)
+
+● Please view the screenshots folder
