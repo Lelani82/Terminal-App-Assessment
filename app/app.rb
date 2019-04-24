@@ -1,27 +1,37 @@
-# require_relative './classes/items'
-# require_relative './classes/list'
+require_relative './classes/items'
+require_relative './classes/list'
+require 'tty-prompt'
 
-loop do 
-    # Ask customer for input
-        puts "Press (a)dd to add an item, or \nPress (p)review to view your current list, or \nPress (q)uit to exit once finished"
+# Creates new object
+ordered_list = List.new
+
+# Main Loop - Asks customer for options
+loop do
+    puts "Press (a)dd to add an item, or \nPress (p)review to view your current list, or \nPress (q)uit to exit once finished"
     answer = gets.strip.downcase
-
+    
+    # Categories array
+    categories = %w(fruit/veggies chilled/frozen meat/poultry bakery other)
+        
     case answer
-    when "a"    # When input is (a)         
+    # When input is (a)
+    when "a"
         puts "What item would you like to add to your shopping list?"
-        item = gets.strip.downcase
-        puts "How many #{item}'s would you like?"
+        item_name = gets.strip.downcase
+        prompt = TTY::Prompt.new
+        category = prompt.select('Choose your category', categories, help: '(Use arrow keys and Enter to finish)')
+        item = Item.new(item_name, category)
+        puts "How many #{item_name}'s would you like?"
         quantity = gets.strip.to_i
-        customer_list = {}
-        puts "You have "
-    when "p"    # When input is (p)
-        puts "Here are your current items that you've added:"
-        # Add list
-    when "q"    # When input is (q)
-        puts "Here's your shopping list:"
-        # Add list
+        ordered_list.add_item(item, quantity)
+    # When input is (p)
+    when "p"
+        ordered_list.preview
+    # When input is (q)
+    when "q"
+        ordered_list.print_final_list(categories)
         break
-    else        # When input is none of the above
+    else 
         puts "Invalid option"
     end
 end

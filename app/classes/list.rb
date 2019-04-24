@@ -2,7 +2,7 @@ require_relative 'items'
 require 'tty-prompt'
 
 class List
-    
+    attr_reader :item, :quantity
     def initialize
         # @list is a hash where the item is the key, and the quantity is the value
         @list = Hash.new(0)
@@ -13,62 +13,42 @@ class List
         return self
     end
 
-    def preview                                                 # This creates current shopping items list
-        puts "=============================="
+    def preview
+        # This creates current shopping items list
         puts "Your current shopping list is:"
-        puts "=============================="
+        puts "-------------------------------"
         @list.each do |item, quantity|
-            puts "#{quantity} - #{item.item_name}"              
+            puts "#{quantity} - #{item.item_name}"
         end
-        puts "=============================="
+        puts "________________________________"
     end
 
-    # def final                                                   # This creates the final shopping list in categories
-    #     puts "=============================="
-    #     puts "Your Final Shopping List:"
-    #     puts "=============================="
-    #     @category.each do |item_name, category|
-    #         puts "#{category} - #{item.item_name}"              
-    #     end
-    #     puts "=============================="
-    # end
+    def print_category(category)
+        #print items and quantities in category
+        puts category
+        puts
+        puts 
+        #print items
+        @list.each do |item, quantity|
+            if(item.category == category)
+                puts "#{ quantity} - #{item.item_name}"
+            end
+        end        
+        puts "____________________________"
+        puts
+    end
 
-end
+   
 
-# Creates new object
-ordered_list = List.new
-
-# Main Loop - Asks customer for options
-loop do 
-    puts "Press (a)dd to add an item, or \nPress (p)review to view your current list, or \nPress (q)uit to exit once finished"
-    answer = gets.strip.downcase
-    
-    category = %w(fruit/veggies chilled/frozen meat/poultry bakery other)       # Categories array
-        
-    case answer
-    when "a"                                            # When input is (a)
-        puts "What item would you like to add to your shopping list?"
-        item_name = gets.strip.downcase
-        prompt = TTY::Prompt.new
-        prompt.multi_select('Choose your category', category, help: '(Use arrow keys and Enter to finish)')
-        item = Item.new(item_name, category)
-        puts "How many #{item_name}'s would you like?"
-        quantity = gets.strip.to_i
-        ordered_list.add_item(item, quantity)
-    when "p"                                            # When input is (p)
-        puts ordered_list.preview
-    when "q"                                            # When input is (q)
-        #puts ordered_list.final
+    def print_final_list(categories)
         # This creates the final shopping list in categories
-             puts "=============================="
-             puts "Your Final Shopping List:"
-             puts "=============================="
-             category.each do |item_name, category|
-             puts "#{category} - #{item_name}"              
-             end
-             puts "=============================="        
-        break
-    else                                                # When input is none of the above
-        puts "Invalid option"
+        puts "Your Final Shopping List:"
+        puts "-------------------------------"
+        categories.each do |category|
+            print_category(category)
+        end
     end
+
+
 end
+
