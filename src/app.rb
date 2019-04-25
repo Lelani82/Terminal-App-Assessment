@@ -26,7 +26,7 @@ loop do
         category = prompt.select('Choose your category', categories, help: '(Use arrow keys and Enter to finish)')
         item = Item.new(item_name, category)
         # Prompts user to add a quantity
-        puts "How many #{item_name}'s would you like?"
+        puts "How many #{item_name}(s) would you like to add?"
         quantity = gets.strip.to_i
         ordered_list.add_item(item, quantity)
         # User taken back to main loop 

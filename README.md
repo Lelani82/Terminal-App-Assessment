@@ -53,7 +53,7 @@ Step 4: Seleting option 'a' - Adding an item to your shopping list
 
 ● The app will ask you what item you would like to add. Type in your item and press Enter.
 
-● The app will ask you to choose your category. Use the arrow keys and press Enter). There are 5 categories to choose from:
+● The app will ask you to choose your category. Use the arrow keys and press Enter. There are 5 categories to choose from:
 
 ○ Fruit and Veggies
 
@@ -65,7 +65,7 @@ Step 4: Seleting option 'a' - Adding an item to your shopping list
 
 ○ Other
 
-● The app will ask you how many you would like to add. Type in your quantity and press Enter.
+● The app will ask you how many items you would like to add. Type in your quantity and press Enter.
 
 ● The app will take you back to Step 3 where you can continue to add more items, preview your current list or quit and view your final list.
 
@@ -77,7 +77,7 @@ Step 5: Seleting option 'p' - Previewing your current items in your shopping lis
 
 Step 6: Seleting option 'q' - Quiting and viewing your final shopping list (sorted by categories)
 
-● The app will show you your final shopping list. It will display your items in their categories.
+● The app will show your final shopping list. It will display your items in their categories.
 
 ● This final step also exits you from the app.
 
@@ -124,6 +124,8 @@ Here is a list of possible future enhancements we have thought of:
 
 ● The option to update or edit your list
 
+● To only accept a number in the quantity field and to prompt the user if anything else is entered
+
 ![apps-future-enhancements](docs/12-trello-future-enhancements.png "apps-future-enhancements-trello")
 
 ### Accessibility Concerns
@@ -131,18 +133,20 @@ Here is a list of possible future enhancements we have thought of:
 We thought about how visually impaired people could possibly have difficulty when using our app. Possible solutions could include:
 
 ● Install a gem that converts text to speech; or 
+
 ● Using a screen reader
 
 We also thought about the consequences of installing gems that could alter the text:
 
 ● Converting the text to flashing fonts - This would be inappropriate for people with epilepsy; or
+
 ● Converting the font to certain colours - This could be hard for people to read, so we considered our colour selection
 
 ### Potential legal, moral, ethical, cultural and safety issues
 We have discussed these potential issues. The only possible issue we have come accross would be any legal implications associated with using an external Gem.
 
 ### Possible social, political, cultural, racial, gender and international issues
-We have discussed these potential issues. The only possible issue we have come accross would be international usage of our app, where the country's main language is not English. This can easily be rectified by translating our apps prompts into a foreign language.
+We have discussed these potential issues. The only possible issue we have come accross would be the international usage of our app, where the country's main language is not English. This can easily be rectified by translating our apps prompts into a foreign language.
 
 ___________________________________________________________________________________________________________________________
 
@@ -154,7 +158,7 @@ We considered a couple of different app ideas but ultimately chose the shopping 
 
 ● It was something we could both potentially use and 
 
-● Due to time constraints, we dismissed our other larger, more complex app ideas
+● Due to time constraints, we dismissed all other larger, more complex, app ideas
 
 ![apps-brainstorming](docs/13-brainstorming-session.png "apps-brainstorming-session")
 
@@ -250,5 +254,3 @@ Our design changes:
 ![slack communication](docs/22-slack.png "slack-communication-1")
 
 ![slack communication](docs/23-slack.png "slack-communication-2")
-
-![slack communication](docs/24-slack.png "slack-communication-3")
