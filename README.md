@@ -125,7 +125,7 @@ We considered a couple of different app ideas but ultimately chose the shopping 
 
 ● It was something we could both potentially use and 
 
-● Due to time constraints, we dismissed the other larger, more complex apps 
+● Due to time constraints, we dismissed our other larger, more complex app ideas
 
 Screenshots can be viewed in docs/1-brainstorming folder
 
@@ -133,7 +133,7 @@ Screenshots can be viewed in docs/1-brainstorming folder
 
 ### User stories of our App Design
 
-We added the foolowing user stories to our Trello Board:
+We added the following user stories to our Trello Board:
 
 ● US-1: As an app I need to prompt the user and ask them what they want
 
@@ -149,13 +149,27 @@ We added the foolowing user stories to our Trello Board:
 
 ● US-7: As a user I can see what's on my list whenever I want
 
-Screenshots can be viewed in docs/1-brainstorming folder
+Screenshots can be viewed in docs/2-user-stories folder
 
-[user-stories] (../docs/2-user-stories/trello-user-stories.png)
+![user-stories](docs/2-user-stories/trello-user-stories.png "User-Stories") 
 
 ### Our Project Plan & Timeline
 
-● Please view the screenshots folder
+We roughly broke up our timeline so that we could cover each of the following:
+
+● Day 1: Brainstorming/ Seek approval/ Timeline/ Basic design concept/ Trello board
+
+● Day 2: Review Trello board's to do list and user stories/ Started coding/ Test as we went along
+
+● Day 3: Install Gem file/ Make app DRY/ Complete coding/ Continued with Trello Board/ Start with documentation/ Start with Power Point presentation/ Check Rubric criteria 
+
+● Day 4: Final Day Goal/ Complete any outstanding tasks 
+
+● Day 5: Due Date/ Final day to complete any outstanding tasks/ Submit Assessment
+
+Screenshots can be viewed in docs/1-brainstorming folder
+
+[brainstorming] (../docs/1-brainstorming/brainstorming-session)
 
 ### Description of Overall App Design (classes, files, basic flow)
 
