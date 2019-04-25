@@ -8,13 +8,14 @@ class List
         @list = Hash.new(0)
     end
 
+        # Adds item and quantity to @list
     def add_item(item, quantity)
         @list[item] += quantity
         return self
     end
 
+    # This creates current shopping list for user to preview
     def preview
-        # This creates current shopping items list
         puts "Your current shopping list is:"
         puts "-------------------------------"
         @list.each do |item, quantity|
@@ -24,11 +25,11 @@ class List
     end
 
     def print_category(category)
-        #print items and quantities in category
+        # Prints items and quantities in category
         puts category
         puts
         puts 
-        #print items
+        # Print items
         @list.each do |item, quantity|
             if(item.category == category)
                 puts "#{ quantity} - #{item.item_name}"
@@ -38,8 +39,8 @@ class List
         puts
     end
 
+    # This creates final shopping list sorted into categories
     def print_final_list(categories)
-        # This creates the final shopping list in categories
         puts "Your Final Shopping List:"
         puts "-------------------------------"
         categories.each do |category|

@@ -83,7 +83,34 @@ Step 6: Seleting option 'q' - Quiting and viewing your final shopping list (sort
 
 ### Screenshots of our App
 
-● Please view the screenshots folder
+● Screenshots of our app's coding:
+
+![apps-coding](docs/1-apps-main-file.png "apps-main-file") 
+
+![apps-coding](docs/2-apps-class-list-file.png "apps-class-list-file")
+
+![apps-coding](docs/3-apps-class-items-file.png "apps-class-items-file")
+
+● Screenshots of our app being used:
+
+![apps-output](docs/4-output.png "app-being-used-1")
+
+![apps-output](docs/5-output.png "app-being-used-2")
+
+![apps-output](docs/6-output.png "app-being-used-3")
+
+![apps-output](docs/7-output.png "app-being-used-4")
+
+![apps-output](docs/8-output.png "app-being-used-5")
+
+● Screenshots of our app's tests:
+
+Full Testing List:
+![apps-testing](docs/9-Testing.png "apps-full-testing-file") 
+
+![apps-testing](docs/10-Testing-23April.png "apps-testing-file-day1")
+
+![apps-testing](docs/11-Testing-24April.png "apps-testing-file-day2")
 
 ### Future Enhancements of our App
 
@@ -91,11 +118,13 @@ Here is a list of possible future enhancements we have thought of:
 
 ● When printing the final list, only print the categories which include items (instead of printing a full list with empty categories)
 
-● The option to delete an item fro your list
+● The option to delete an item from your list
 
 ● The option to save your list to a YAML file 
 
 ● The option to update or edit your list
+
+![apps-future-enhancements](docs/12-trello-future-enhancements.png "apps-future-enhancements-trello")
 
 ### Accessibility Concerns
 
@@ -127,9 +156,7 @@ We considered a couple of different app ideas but ultimately chose the shopping 
 
 ● Due to time constraints, we dismissed our other larger, more complex app ideas
 
-Screenshots can be viewed in docs/1-brainstorming folder
-
-[brainstorming] (../docs/1-brainstorming/brainstorming-session.png)
+![apps-brainstorming](docs/13-brainstorming-session.png "apps-brainstorming-session")
 
 ### User stories of our App Design
 
@@ -149,9 +176,7 @@ We added the following user stories to our Trello Board:
 
 ● US-7: As a user I can see what's on my list whenever I want
 
-Screenshots can be viewed in docs/2-user-stories folder
-
-![user-stories](docs/2-user-stories/trello-user-stories.png "User-Stories") 
+![apps-user-stories](docs/14-trello-user-stories.png "apps-user-stories-trello")
 
 ### Our Project Plan & Timeline
 
@@ -167,18 +192,26 @@ We roughly broke up our timeline so that we could cover each of the following:
 
 ● Day 5: Due Date/ Final day to complete any outstanding tasks/ Submit Assessment
 
-Screenshots can be viewed in docs/1-brainstorming folder
-
-[brainstorming] (../docs/1-brainstorming/brainstorming-session)
+![apps-predicted-timeline](docs/15-predicted-timeline.png "apps-predicted-timeline")
 
 ### Description of Overall App Design (classes, files, basic flow)
 
-●  We have 3 files which include 1 main and 2 class files. We chose to have 2 seperate class files to keep the main app uncluttered and easy to follow and edit. We chose to have all the categories listed in the main app so that it would be easy to update them if you chose to use it for a different type of store (like Bunnings)
-●  The whole app is run from the main file and contains a main loop which prompts the user for their input (view screenshots folder)
-●  For basic flow diagram please view the screenshots folder
+App design files, classes and flow diagram:
+
+●  We have 3 files which includes 1 main app and 2 class files. 
+
+● We chose to have 2 seperate class files in order to keep the main app as uncluttered as possible. This allowed us to easily follow and edit the app as we created it. 
+
+● We chose to have all the categories listed in the main app so that it would be easy to update them if you chose to use it for a different type of store (like Bunnings)
+
+● The app is run from the main file and contains a main loop which prompts the user for their input 
+
+![apps-main-loop](docs/16-apps-main-loop.png "apps-main-loop-flow-diagram")
 
 
-Initial design specifications:
+### Design considerations and choices
+
+Our initial design specifications:
 
 ● Prompt user 
 
@@ -190,13 +223,32 @@ Initial design specifications:
 
 ● A list will appear when done
 
+Our design changes:
 
-### Design considerations and choices
+● We originally wanted to add in an item price feature but realised that this could become an issue due to varying shop prices. We also realised that there was no real need for this information on here.
 
-● 
+● We decided to add in a categories feature so that it would enable the shopper to group their items together in a logical order and allow for a more efficient shopping experience.
 
-Changes/ added - no prices, added categories, added preview option
+● We also decided to add in a preview feature so that the user could check their current shopping list to see if they'd already added in an item.
+
+![apps-design-considerations](docs/17-slack-communication.png "apps-design-considerations")
 
 ### Screenshots of Trello board(s)
 
-● Please view the screenshots folder
+● Here are a few of our Trello Board Screenshots:
+
+![trello-board](docs/18-trello.png "trello-board-1")
+
+![trello-board](docs/19-trello.png "trello-board-2")
+
+![trello-board](docs/20-trello.png "trello-board-3")
+
+![trello-board](docs/21-trello.png "trello-board-4")
+
+● Here are our Slack Communication Screenshots:
+
+![slack communication](docs/22-slack.png "slack-communication-1")
+
+![slack communication](docs/23-slack.png "slack-communication-2")
+
+![slack communication](docs/24-slack.png "slack-communication-3")
