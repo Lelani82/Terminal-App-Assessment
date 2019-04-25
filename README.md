@@ -99,18 +99,21 @@ Here is a list of possible future enhancements we have thought of:
 
 ### Accessibility Concerns
 
-We thought about how visually impaired people could have an issue if wanting to use our app. Possible solutions could include:
+We thought about how visually impaired people could possibly have difficulty when using our app. Possible solutions could include:
 
-● Install a gem that converts text to speech or 
+● Install a gem that converts text to speech; or 
 ● Using a screen reader
 
-We also thought about the consequences of installing a gem that could make it hard for people to read (we considered our colour selection) or for people that have epilepsy (we decided to avoid using flashing text)
+We also thought about the consequences of installing gems that could alter the text:
+
+● Converting the text to flashing fonts - This would be inappropriate for people with epilepsy; or
+● Converting the font to certain colours - This could be hard for people to read, so we considered our colour selection
 
 ### Potential legal, moral, ethical, cultural and safety issues
-We have discussed and addressed any possible issues. We have not come accross any, apart from possible licensing issues with using an external Gem.
+We have discussed these potential issues. The only possible issue we have come accross would be any legal implications associated with using an external Gem.
 
 ### Possible social, political, cultural, racial, gender and international issues
-We have discussed and addressed any possible issues. We have not come accross any.
+We have discussed these potential issues. The only possible issue we have come accross would be international usage of our app, where the country's main language is not English. This can easily be rectified by translating our apps prompts into a foreign language.
 
 ___________________________________________________________________________________________________________________________
 
@@ -118,7 +121,22 @@ ________________________________________________________________________________
 
 ### Evidence of ​our app idea and brainstorming sessions
 
-● Please view the screenshots folder 
+We considered a couple of different app ideas but ultimately chose the shopping list because:
+
+● It was something we could both potentially use and 
+
+● Due to time constraints, we dismissed the other larger, more complex apps 
+
+Screenshots can be viewed in docs/1-brainstorming folder
+
+[brainstorming] (../docs/1-brainstorming/brainstorming-session)
+
+
+
+
+
+
+Please view the screenshots folder 
 
 ### User stories of our App Design
 
@@ -134,9 +152,25 @@ ________________________________________________________________________________
 ●  The whole app is run from the main file and contains a main loop which prompts the user for their input (view screenshots folder)
 ●  For basic flow diagram please view the screenshots folder
 
+
+Initial design specifications:
+
+● Prompt user 
+
+● User can add an item
+
+● User can add a quantity
+
+● User can repeat this process
+
+● A list will appear when done
+
+
 ### Design considerations and choices
 
-● We considered a couple of different app ideas but chose the shopping list because it was something we could both potentially use and due to time constraints with other larger, more complex apps (view screenshots folder)
+● 
+
+Changes/ added - no prices, added categories, added preview option
 
 ### Screenshots of Trello board(s)
 
