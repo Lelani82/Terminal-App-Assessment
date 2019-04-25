@@ -129,18 +129,29 @@ We considered a couple of different app ideas but ultimately chose the shopping 
 
 Screenshots can be viewed in docs/1-brainstorming folder
 
-[brainstorming] (../docs/1-brainstorming/brainstorming-session)
-
-
-
-
-
-
-Please view the screenshots folder 
+[brainstorming] (../docs/1-brainstorming/brainstorming-session.png)
 
 ### User stories of our App Design
 
-● Please view the screenshots folder
+We added the foolowing user stories to our Trello Board:
+
+● US-1: As an app I need to prompt the user and ask them what they want
+
+● US-2: As an app I need to prompt the user and ask them how many they want
+
+● US-3: As an app I can display the list in a nice format
+
+● US-4: As a user I can add any item to the list
+
+● US-5: As a user I can add any quantity to my item
+
+● US-6: As a user I can finish and see my list
+
+● US-7: As a user I can see what's on my list whenever I want
+
+Screenshots can be viewed in docs/1-brainstorming folder
+
+[user-stories] (../docs/2-user-stories/trello-user-stories.png)
 
 ### Our Project Plan & Timeline
 
